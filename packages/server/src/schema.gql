@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Timesheet {
+  id: Int!
+  firstName: String!
+  lastName: String
+}
+
+type Query {
+  timesheets: [Timesheet!]!
+  getTimeSheet(id: Int!): [Timesheet!]!
+}
+
+type Mutation {
+  createTimeSheet(createTimesheetInput: CreateTimesheetInput!): [Timesheet!]!
+}
+
+input CreateTimesheetInput {
+  firstName: String!
+  lastName: String
+}

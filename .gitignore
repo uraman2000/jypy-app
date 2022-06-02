@@ -1,0 +1,9 @@
+/.history
+
+# dependencies
+/node_modules
+**/node_modules
+
+# misc
+
+development.env

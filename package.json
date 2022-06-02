@@ -1,0 +1,19 @@
+{
+  "name": "jypy-app",
+  "version": "1.0.0",
+  "description": "timesheet",
+  "scripts": {
+    "start:server": "lerna exec npm start --scope=@jypy-app/server",
+    "start:dev:server": "lerna exec npm run start:dev --scope=@jypy-app/server",
+    "build:server": "lerna exec npm run build --scope=@jypy-app/server",
+    "start:server:prod": "lerna exec npm run start:prod --scope=@jypy-app/server",
+    "start:server:prod:pm2": "lerna exec npm run start:prod:pm2 --scope=@jypy-app/server",
+    "deploy:server": "lerna exec npm run deploy --scope=@jypy-app/server",
+    "deploy:ci:server": "lerna exec npm run deploy:ci --scope=@jypy-app/server"
+  },
+  "author": "PMI Corp",
+  "license": "ISC",
+  "dependencies": {
+    "lerna": "^5.0.0"
+  }
+}
