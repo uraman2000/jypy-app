@@ -23,7 +23,7 @@ export class TimesheetService {
   }
 
   findOne(id: number): Promise<Timesheet> {
-    return this.repository.findOne({ where: { id: id } });
+    return this.repository.findOneOrFail(id);
   }
 
   update(id: number, updateTimesheetInput: UpdateTimesheetInput) {

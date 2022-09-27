@@ -9,7 +9,8 @@
     "start:server:prod": "lerna exec npm run start:prod --scope=@jypy-app/server",
     "start:server:prod:pm2": "lerna exec npm run start:prod:pm2 --scope=@jypy-app/server",
     "deploy:server": "lerna exec npm run deploy --scope=@jypy-app/server",
-    "deploy:ci:server": "lerna exec npm run deploy:ci --scope=@jypy-app/server"
+    "deploy:ci:server": "lerna exec npm run deploy:ci --scope=@jypy-app/server",
+    "start:client": "lerna exec npm start --scope=@jypy-app/client"
   },
   "author": "PMI Corp",
   "license": "ISC",

@@ -10,7 +10,7 @@ type Timesheet {
 
 type Query {
   timesheets: [Timesheet!]!
-  getTimeSheet(id: Int!): [Timesheet!]!
+  getTimeSheet(id: Int!): Timesheet!
 }
 
 type Mutation {

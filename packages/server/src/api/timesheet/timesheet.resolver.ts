@@ -20,7 +20,7 @@ export class TimesheetResolver {
     return this.timesheetService.findAll();
   }
 
-  @Query(() => [Timesheet])
+  @Query(() => Timesheet)
   getTimeSheet(@Args('id', { type: () => Int }) id: number) {
     return this.timesheetService.findOne(id);
   }

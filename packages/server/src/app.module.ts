@@ -5,8 +5,6 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { ApiModule } from './api/api.module';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { getEnvPath } from './common/helper/env.helper';
 import { TypeOrmConfigService } from './shared/typeorm/typeorm.service';
 
@@ -22,7 +20,6 @@ const envFilePath: string = getEnvPath(`${__dirname}/common/envs`);
     }),
     ApiModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+
 })
 export class AppModule {}
